@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of JS Events</title>
+
+    <style>
+        section{
+            max-width: 80%;
+            margin: 20px auto;
+        }
+        .comment{
+            border: 3px solid cyan;
+            padding: 20px;
+            background: lightcyan;
+            border-radius: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="page-title">Basics of JS Events</h1>
+    <button id="change-title">Change title</button>
+<br><br><br>
+    <div>
+        <input id="input-email" type="email" placeholder="Enter email">
+        <button id="submit-btn">Submit</button>
+        <p id="submit-update"></p>
+    </div>
+
+    <br><br><br>
+    <section>
+        <h1>All Comments</h1>
+        <div id="comments-container">
+            <p class="comment">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto ipsa, velit iure fuga assumenda ipsum error quisquam voluptatum deserunt quae!</p>
+            <p class="comment">Soluta tempore quasi sunt impedit repellat rem labore? A, adipisci! Quas, consequuntur. Aperiam non quis amet nobis sed officia soluta!</p>
+            <p class="comment">Sit excepturi quibusdam molestiae doloribus iusto quod consequuntur magni quae? Earum qui assumenda molestiae sunt rem blanditiis, dolorum nulla incidunt?</p>
+        </div>
+        <form>
+            <textarea id="comment-texts-box" cols="50" rows="6"></textarea>
+        </form>
+        <button id="comment-post-btn">Post Comment</button>
+
+    </section>
+
+    <script src="events.js"></script>
+</body>
+</html>

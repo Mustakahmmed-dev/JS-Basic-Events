@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events - 02</title>
+
+    <style>
+        section{
+            border:  2px solid cyan;
+            padding: 50px;
+            margin: 40px 20px;
+        }
+        ul{
+            border: 2px solid blue;
+            padding: 40px;
+        }
+        li{
+            border: 1px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body id="body">
+    <h1>JavaScript Events - 02</h1>
+    <input type="text" id="test-typing">
+
+    <br><br><br>
+
+    <!-- Github button delete -->
+     <h2 id="headline">Delete this line</h2>
+     <input id="input-field" type="text">
+     <button id="btn-delete" disabled>Delete</button>
+
+
+     
+     <section id="section">
+        <h1>Events Propagation</h1>
+        <ul id="ul-list">
+            <li class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quae?</li>
+            <li class="item">Omnis at sunt nemo provident nostrum sed deleniti dignissimos repellendus.</li>
+            <li id="item3" class="item">Provident tempora enim ullam adipisci. Harum consectetur eius consequuntur! Animi.</li>
+            <li class="item">Saepe numquam voluptatum quos porro blanditiis tempore. Aliquam, consequuntur ad.</li>
+            <li class="item">Eos aspernatur a laboriosam, maiores optio quos eligendi magni consectetur.</li>
+        </ul>
+     </section>
+    <script src="second-events.js"></script>
+    <script src="propagation.js"></script>
+</body>
+</html>
