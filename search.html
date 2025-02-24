@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Products</title>
+    
+    <style>
+        body{
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        .body-title{
+            text-align: center;
+        }
+        .search-area{
+            margin: 30px 0px;
+        }
+        .search-area input, .search-area button{
+            padding: 16px 30px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .available-prod-title{
+            color: rgba(0, 0, 255, 0.636);
+            font-size: 30px;
+        }
+
+        #products-container{
+            border-top: 1px solid gray;
+            padding-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .product-desc{
+            border: 1px solid blue;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width: 576px) {
+            #products-container{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="body-title">Search Products</h1>
+    <hr>
+    <!-- Search buttons -->
+    <section class="search-area">
+        <input id="input-search-field" type="text" placeholder="Search">
+        <button id="btn-search">Search</button>
+        <div id="result-area">
+            <p>Total Found: <span id="total-found"></span> </p>
+            <p>Other: <span id="other-found"></span> </p>
+        </div>
+    </section>
+
+    <!-- Products section -->
+    <section>
+        <h2 class="available-prod-title">Available Products</h2>
+
+        <div id="products-container">
+
+            <div class="product-desc">
+                <h2>Laptop 2025 BOOM Model</h2>
+                <p>Lenovo Laptop Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aut harum autem possimus officia ipsam ut dolorem praesentium, esse quibusdam!</p>
+                <div>
+                    <p>Price <span class="price">45000</span></p>
+                </div>
+            </div>
+
+            <div class="product-desc">
+                <h2>Phone 2025 BOOM Model</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, magni! Sequi nam hic ex obcaecati autem libero, tempore, voluptatem ullam est dicta repudiandae minus tenetur, consequuntur molestiae modi eos ea. The daily use phone for the year</p>
+                <div>
+                    <p>Price <span class="price">45000</span></p>
+                </div>
+            </div>
+
+            <div class="product-desc">
+                <h2>Laptop 2024 Trending Model</h2>
+                <p>Lenovo Laptop Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aut harum autem possimus officia ipsam ut dolorem praesentium, esse quibusdam!</p>
+                <div>
+                    <p>Price <span class="price">45000</span></p>
+                </div>
+            </div>
+
+            <div class="product-desc">
+                <h2>Gazi Laptop Price Going 2025 BOOM Model</h2>
+                <p>Lenovo Laptop Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aut harum autem possimus officia ipsam ut dolorem praesentium, esse quibusdam!</p>
+                <div>
+                    <p>Price <span class="price">45000</span></p>
+                </div>
+            </div>
+
+            <div class="product-desc">
+                <h2>Gada phone titel 2025 Crash Model</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate asperiores quos exercitationem porro voluptatum culpa iure vel repellat commodi possimus adipisci vitae obcaecati eaque, suscipit labore harum, eos provident officiis aliquid voluptas dolorum laboriosam! Aliquam alias nemo nobis consequatur soluta blanditiis facere et qui. Maxime. Phone offer ongoing</p>
+                <div>
+                    <p>Price <span class="price">45000</span></p>
+                </div>
+            </div>
+
+            <div class="product-desc">
+                <h2>Laptop 2020 Model</h2>
+                <p>Lenovo Laptop Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aut harum autem possimus officia ipsam ut dolorem praesentium, esse quibusdam!</p>
+                <div>
+                    <p>Price <span class="price">45000</span></p>
+                </div>
+            </div>
+
+            <div class="product-desc">
+                <h2>Laptop Galaxy Ongoing</h2>
+                <p>Lenovo Laptop Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aut harum autem possimus officia ipsam ut dolorem praesentium, esse quibusdam!</p>
+                <div>
+                    <p>Price <span class="price">45000</span></p>
+                </div>
+            </div>
+
+            <div class="product-desc">
+                <h2>Laptop SKyBlue Trending Product</h2>
+                <p>Lenovo Laptop Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aut harum autem possimus officia ipsam ut dolorem praesentium, esse quibusdam!</p>
+                <div>
+                    <p>Price <span class="price">45000</span></p>
+                </div>
+            </div>
+
+            <div class="product-desc">
+                <h2>Laptop 225 BOOM Model</h2>
+                <p>Lenovo Laptop Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aut harum autem possimus officia ipsam ut dolorem praesentium, esse quibusdam!</p>
+                <div>
+                    <p>Price <span class="price">45000</span></p>
+                </div>
+            </div>
+
+            <div class="product-desc">
+                <h2>Smartphone trending Now Pi0</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ullam, ex rerum reprehenderit illum ea magnam? Nesciunt accusantium modi nihil ut at ex in non aspernatur pariatur eaque mollitia quod distinctio nam aliquid error molestias asperiores ullam facere, totam veritatis? smart intelli phone</p>
+                <div>
+                    <p>Price <span class="price">45000</span></p>
+                </div>
+            </div>
+
+            <div class="product-desc">
+                <h2>Laptop Model 2423jlkd</h2>
+                <p>Lenovo Laptop Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aut harum autem possimus officia ipsam ut dolorem praesentium, esse quibusdam!</p>
+                <div>
+                    <p>Price <span class="price">45000</span></p>
+                </div>
+            </div>
+
+            <div class="product-desc">
+                <h2>Smart Dial PHone Trending Now</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus earum repudiandae vitae qui laboriosam, quis cumque in, veniam recusandae quibusdam explicabo animi maxime. Voluptatem quisquam eius velit, delectus ab sint illo placeat minus aliquam commodi nam maiores sed quos mollitia.</p>
+                <div>
+                    <p>Price <span class="price">45000</span></p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="search.js"></script>
+</body>
+</html>

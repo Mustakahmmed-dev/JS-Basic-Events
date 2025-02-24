@@ -7,6 +7,8 @@ let searchedItems = document.getElementById("searched-items");
 let products = document.getElementsByClassName("product-description");
 
 for(let product of products){
+      
+
    if(product.innerText.toLowerCase().includes(searchQuery)){
     searchedItems.appendChild(product);
    }
